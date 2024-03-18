@@ -5,7 +5,6 @@ thickness=3;
 big_height=40;
 small_height=40;
 inter_height=20;
-offcenter=false;
 
 // Grande section 
 difference() {
