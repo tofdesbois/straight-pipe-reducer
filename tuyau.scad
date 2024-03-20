@@ -9,14 +9,14 @@ inter_height=20;
 // Grande section 
 difference() {
     cylinder(h=big_height, d=big_diameter, center=false);
-    cylinder(h=big_height, d=big_diameter-thickness, center=false);
+    cylinder(h=big_height, d=big_diameter-thickness*2, center=false);
 }
 
 // Section réductive
 translate([0, 0, big_height]) {
     difference() {
         cylinder(h=inter_height, d1=big_diameter, d2=small_diameter, center=false);
-        cylinder(h=inter_height, d1=big_diameter-thickness, d2=small_diameter-thickness, center=false);
+        cylinder(h=inter_height, d1=big_diameter-thickness*2, d2=small_diameter-thickness*2, center=false);
     }
 }
 
@@ -24,6 +24,6 @@ translate([0, 0, big_height]) {
 translate([0, 0, big_height+inter_height]) {
     difference() {
         cylinder(h=small_height, d=small_diameter, center=false);
-        cylinder(h=small_height, d=small_diameter-thickness, center=false);
+        cylinder(h=small_height, d=small_diameter-thickness*2, center=false);
     }
 }
