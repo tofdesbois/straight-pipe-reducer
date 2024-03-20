@@ -1,2 +1,3 @@
-# straight-pipe-reducer
-Straight pipe reducer fitting
+# Straight pipe reducer fitting
+
+It's simply a configurable pipe connection.
